@@ -49,8 +49,10 @@ install -m 0755 "flowagent-cli-$TARGET/flowagent" ~/.local/bin/flowagent
 ```
 
 Windows archives are `.zip`; `sha256.sum` in each release lists every checksum. macOS binaries
-are signed (Developer ID "Erwins Enkel") and notarized. Windows binaries are unsigned, so
-SmartScreen may warn on first start.
+are signed (Developer ID "Erwins Enkel") and notarized, so a downloaded binary starts from the
+Terminal without a Gatekeeper prompt. Start it from the Terminal, not by double-clicking it in
+Finder: macOS blocks a double-clicked command-line binary even when it is notarized. Windows
+binaries are unsigned, so SmartScreen may warn on first start.
 
 ## Issues
 
